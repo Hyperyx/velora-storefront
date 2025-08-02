@@ -1,6 +1,5 @@
 # Next.js Subscription Payments Starter
 
-
 > [!WARNING]  
 > This repo has been sunset and replaced by a new template: https://github.com/nextjs/saas-starter
 
@@ -142,7 +141,7 @@ If you don't intend to use a local Supabase instance for development and testing
 pnpm dlx vercel env pull .env.local
 ```
 
-Running this command will create a new `.env.local` file in your project folder. For security purposes, you will need to set the `SUPABASE_SERVICE_ROLE_KEY` manually from your [Supabase dashboard](https://app.supabase.io/) (`Settings > API`). If you are not using a local Supabase instance, you should also change the `--local` flag to `--linked' or '--project-id <string>' in the `supabase:generate-types` script in `package.json`.(see -> [https://supabase.com/docs/reference/cli/supabase-gen-types-typescript])
+Running this command will create a new `.env.local` file in your project folder. For security purposes, you will need to set the `SUPABASE_SERVICE_ROLE_KEY` manually from your [Supabase dashboard](https://app.supabase.io/) (`Settings > API`). If you are not using a local Supabase instance, you should also change the `--local` flag to `--linked' or '--project-id <string>' in the `supabase:generate-types`script in`package.json`.(see -> [https://supabase.com/docs/reference/cli/supabase-gen-types-typescript])
 
 ### Local development with Supabase
 
@@ -259,4 +258,5 @@ To run the project in live mode and process payments with Stripe, switch Stripe 
 Afterward, you will need to rebuild your production deployment for the changes to take effect. Within your project Dashboard, navigate to the "Deployments" tab, select the most recent deployment, click the overflow menu button (next to the "Visit" button) and select "Redeploy" (do NOT enable the "Use existing Build Cache" option).
 
 To verify you are running in production mode, test checking out with the [Stripe test card](https://stripe.com/docs/testing). The test card should not work.
+
 # velora-storefront
